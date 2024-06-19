@@ -1,29 +1,30 @@
-
+html {
+    min-width: 750px;
+}
 body {
     font-family: "Arial", sans-serif;
     display: flex;
     margin: 0;
 }
 main {
-    width: calc(100% - 350px);
-    background-color: #FFFFF5;
+    width: calc(100% - 400px);
+    background-color: #fdfdee;
 }
 aside {
-    width: 350px;
+    width: 400px;
 }
+
 #upper-panel {
     display: flex;
     justify-content: space-around;
-
     position: fixed;
     top: 0;
     left: 0;
-    width: calc(100% - 350px);
+    width: calc(100% - 400px);
     background-color: #333331;
-    height: 90px;
+    height: 92px;
     z-index: 1;
     min-width: 315px;
-
 }
 #logotype{
     width: 100px;
@@ -33,7 +34,7 @@ aside {
     align-items: center;
     color: white;
     height: 100%;
-    background-color: #DE8B3A;
+    background-color: #de832f;
 }
 #logotype-kma {
     font-size: 1.2em;
@@ -61,29 +62,30 @@ aside {
     color: #A1A1A1;
 }
 #phone {
-    font-size: 1.3em;
-    margin-right: 20px;
+    font-size: 1.1em;
+    margin-right: 15px;
 }
 #free-delivery {
-    font-size: 1.2em;
-    margin-left: 20px;
+    font-size: 1.05em;
+    margin-left: 15px;
 }
 #button-wrapper {
     margin-left: auto;
 }
+
 .enter {
-    padding: 7px 13px;
-    color: white;
-    font-weight: bold;
-    background-color: #E3A23C;
-    border-radius: 3px;
-    outline:none;
-    border: none;
-    cursor: pointer;
-}
+     padding: 7px 13px;
+     color: white;
+     font-weight: bold;
+     background-color: #de832f;
+     border-radius: 3px;
+     outline:none;
+     border: none;
+     cursor: pointer;
+ }
 .enter-bottom {
-    margin-left: auto;
-    display: none;
+  margin-left: auto;
+  display: none;
 }
 #adding-information {
     margin-bottom: 5px;
@@ -152,20 +154,22 @@ aside {
 }
 .remarks {
     position: absolute;
-    left: calc(100% - 45px);
     top: -10px;
+    width: 110%;
+    left: -5%;
+    display: flex;
+    justify-content: space-between;
     color: white;
     font-weight: bold;
 }
 .remarks span {
-    padding: 3px 8px;
+ padding: 3px 8px;
     border-radius: 3px;
     display: inline-block;
 
 }
 .remark-new {
-    background-color: #CB5B51;
-    margin-bottom: 3px;
+  background-color: #CB5B51;
 }
 .remark-popular {
     background-color: #72B763;
@@ -211,7 +215,7 @@ aside {
     padding: 7px 13px;
     color: white;
     font-weight: bold;
-    background-color: #E3A23C;
+    background-color: orange;
     border-radius: 3px;
     outline:none;
     border: none;
@@ -274,14 +278,14 @@ aside header{
     color: white;
     border-radius: 50%;
     padding: 3px 10px;
-    background-color: orange;
+    background-color: #E08E28;
     font-weight: bold;
     margin-top: 4px;
     margin-left: 5px;
 }
 #order-pizzas {
-    height: calc(100% - 92px - 65px - 38px - 10px);
-    overflow-y: auto;
+  height: calc(100% - 92px - 65px - 38px - 10px);
+  overflow-y: auto;
 }
 #order-pizzas>div {
     position: relative;
@@ -328,15 +332,15 @@ aside header{
     cursor: pointer;
 }
 .minus-button {
-    background-color: red;
+    background-color: #d41717;
 }
 .plus-button {
-    background-color: green;
+    background-color: #0fa354;
 }
 .cross-button {
     background-color: white;
     border: 1px solid lightgray;
-    color: orange;
+    color: #E08E28;
     margin-left: 20px;
 }
 .order-amount {
@@ -345,50 +349,50 @@ aside header{
     margin: 0 5px;
 }
 footer {
-    height: 100px;
-    display: flex;
-    flex-direction:column;
-    align-items: center;
-    justify-content: center;
-    background-color: #FCFCFC;
+  height: 100px;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
+  background-color: #FCFCFC;
 }
 #order-summary{
-    display: flex;
-    justify-content: space-between;
-    height: 65px;
+  display: flex;
+  justify-content: space-between;
+  height: 65px;
 }
 #order-summary h3 {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 #order-button {
-    width: 80%;
-    margin-left: auto;
-    border-radius: 5px;
-    cursor: pointer;
-    height: 38px;
-    font-size: large;
-    margin-right: auto;
-    border: none;
-    outline: none;
-    font-weight: bold;
-    color: white;
-    background-color: orange;
-
-}
-@media screen and (max-width: 550px) {
-    body {
-        transform: translateX(0);
-    }
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 38px;
+  font-size: large;
+  font-weight: bold;
+  color: white;
+  background-color: orange;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 @media screen and (max-width: 750px) {
-    .enter {
-        display: none;
-    }
-    .enter-bottom {
-        display: block;
-    }
+  body {
+    transform: translateX(0);
+  }
 }
-@media screen and (max-width: 1074px) {
+@media screen and (max-width: 750px) {
+  .enter {
+    display: none;
+  }
+  .enter-bottom {
+    display: block;
+  }
+   }
+@media screen and (max-width: 1125px) {
+
     .pizza {
         width: auto;
         margin-left: auto;
@@ -399,7 +403,7 @@ footer {
         display: none;
     }
 }
-@media screen and (min-width: 1075px) {
+@media screen and (min-width: 1125px) {
     #pizza-list {
         width: 725px;
     }
